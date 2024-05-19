@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- CS559 Workbook Pages - page content &copy; 2021, Michael Gleicher -->
+<!-- This page is part of a Workbook developed for the 
+    CS559 Computer Graphics Class at the University of Wisconsin
+    https://graphics.cs.wisc.edu/Courses/559-sp2021/ -->
+    <head>
+	<meta name="generator" content="Hugo 0.121.1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/workbook.css">
+        <script src="./js/resizeIFrames.js"></script>
+    </head>
+    <body>
+        <div class="container container--outer"><div class="maincolumn">
+
+
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">Workbook 11: The Train Workbook</h1>
+	</header>
+	<div class="content main__content clearfix">
+        
+
+        <p>This workbook is due on Wednesday, March 6, 2024.</p>
+<h2>Learning Goals</h2>
+<ol>
+    <li>To practice some key computations with curves.</li>
+    <li>To implement various aspects of curves in the context of an application.</li>
+    <li>To appreciate why curve concepts, such as arc length parameterization and smoothness, are useful.</li>
+    <li>To write an interesting graphics program.</li>
+</ol>
+
+            <p>This project continues our study of curves in 2D. Last week&rsquo;s workbook went through the key ideas. This week, we&rsquo;ll put those ideas into action in a programming assignment: making a train that goes around a track.</p>
+<h2 id="required-reading">Required Reading</h2>
+<p>There is no new required reading for this week. The readings on curves were part of Workbook 5. You may want to review these readings (including the workbook itself). If you haven&rsquo;t read them, now is a good time to do so. Doing the train will require you to understand the key concepts of curves. Some curve topics are less important for the train, but will come back on exams, or, if you ever do something in computer graphics beyond class.</p>
+<p><strong>Textbook:</strong> Curves are covered in FCG4 Chapter 15. We won&rsquo;t cover all the material in class. The sections are:</p>
+<ol>
+<li>FCG 15.1 - basic ideas of curves, including parameterizations and piecewise representations</li>
+<li>FCG 15.2 - curve properties (especially continuity)</li>
+<li>FCG 15.3 - polynomial pieces - you need to have the basic intuitions but you will not need to do the derivations yourself</li>
+<li>FCG 15.4 - putting pieces together - this makes things sound more complicated than they are</li>
+<li>FCG 15.5 - cubics - you&rsquo;ll need cardinals for the train</li>
+<li>FCG 15.6.1 - Bézier curves - very important, since they are what gets used in Canvas and many other things</li>
+<li>FCG 15.6.2 - B-Spline curves - (and 15.6.3 and 15.6.4 which are advanced kinds of B-Spline curves) is optional</li>
+</ol>
+<h2 id="rubrics-for-grading">Rubrics for Grading</h2>
+<div class="page-rubric-container">
+<details class="page__rubric">
+<summary>Workbook Rubric (113 points total)</summary>
+<br/>
+<div class="page-rubric-grid">
+        <div class="page-rubric-grid-header rubric-box-regular">Points (82):</div><div class="page-rubric-grid-box rubric-box-regular"></div>
+            <div class="page-rubric-grid-points rubric-box-regular">20 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">correct P1 Canvas Assignment submission</div><div class="page-rubric-grid-box rubric-box-regular"></div>
+            <div class="page-rubric-grid-points rubric-box-regular">20 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">clear explanations in p1-workbook.txt</div><div class="page-rubric-grid-box rubric-box-regular"></div>
+            <div class="page-rubric-grid-points rubric-box-regular">20 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">correct P1G Canvas Assignment submission on time</div><div class="page-rubric-grid-box rubric-box-regular">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-regular">4 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">Drawing the track as a single simple curve (cardinal spline) that interpolates the control points</div><div class="page-rubric-grid-box rubric-box-regular">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-regular">5 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">Train goes around the track correctly (&#39;evenly in parameter space&#39; - continuous looping motion)</div><div class="page-rubric-grid-box rubric-box-regular">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-regular">2 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">The interface still works (the track can be moved and the run slider works, even while the train is in motion)</div><div class="page-rubric-grid-box rubric-box-regular">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-regular">2 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">Train has a front</div><div class="page-rubric-grid-box rubric-box-regular">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-regular">3 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">Train points in the right direction as it goes around the track</div><div class="page-rubric-grid-box rubric-box-regular">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-regular">3 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">Train direction and motion is correct even as points are added/removed</div><div class="page-rubric-grid-box rubric-box-regular">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-regular">3 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-regular">Default track configuration shows off arc length (train should speed up and slow down if arc length parameterization is turned off or not implemented)</div>
+    <div class="page-rubric-grid-header rubric-box-bonus">Advanced points (31):</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">3 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Arc Length parameterization (train goes at a relatively constant speed as it goes around the track, no matter what the control point spacing is). You must add a checkbox to turn this on and off. This one is hard, but it enables several of the other things, so it is actually worth a lot</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">2 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Rail Ties drawn perpendicular to track</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">2 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Rail Ties drawn with correct spacing (this is simple once you have arc-length</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">3 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Parallel rails</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">3 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Multiple cars all of them centered on the track</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">3 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Multiple cars that are fixed distance apart)</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">3 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Trucked wheels (requires keeping the pairs of wheels the correct distance apart and on the track, and having the train car positioned appropriately - this is only for people who are into trains and appreciate this detail)</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">2 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Slider to control tension</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">4 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Switchable B-Splines</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">2 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Smoke</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">2 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Scenery</div><div class="page-rubric-grid-box rubric-box-bonus">Box tr-01-01</div>
+            <div class="page-rubric-grid-points rubric-box-bonus">2 pt</div>
+            <div class="page-rubric-grid-desc rubric-box-bonus">Scenery adapts to the track</div></div>
+</details>
+</div>
+<h2 id="get-started">Get Started</h2>
+<p>Don&rsquo;t forget to commit and push as you work!</p>
+
+        
+        
+        
+        
+        <h3 class="get__started">Get started on 
+            <a href="./docs/1/">Page &nbsp;1&nbsp; (The Train: Intro)</a>!</h3>
+        
+	</div>
+</main>
+
+                </div>
+                <div class="sidebar">
+<h2 class="Side_Title">Workbook 11: The Train Workbook</h2>
+<p class="Side__Note">Pages:</p>
+<ul class="Side__List">
+    <li class="Side__Item Side__Selected">Index (The Train Workbook) </li>
+        <li class="Side__Item Side__Unselected"> <a href="./docs/1/">1: The Train: Intro </a></li>
+        <li class="Side__Item Side__Unselected"> <a href="./docs/2/">2: The Train: Assignment </a></li>
+        <li class="Side__Item Side__Unselected"> <a href="./docs/3/">3: Hand-in and Gallery </a></li>
+</ul>
+</div>
+</div>
+    </body>
+</html>
