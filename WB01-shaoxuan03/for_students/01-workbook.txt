@@ -1,0 +1,28 @@
+Wisc ID: 9084052464
+GitHub ID: shaoxuan03
+
+[X] correct WB1 Canvas Assignment submission [none]: 
+[X] correct WB1G Canvas Assignment submission on time [none]: 
+[X] change web page text [01-01-01]: 
+[X] make a red button with your name in it [01-02-08]: 
+[X] change text on button press [01-03-02]: 
+[X] add a javascript file that says something [01-04-07]: 
+[X] change slider speed to half [01-05-04b]: 
+[X] making 3 sliders [01-06-01]: 
+[X] making slider3 be slider2-slider1 (and update when either slider2 or slider1 is moved) [01-06-01]: 
+[X] adjusting slider1 and slider2 when slider3 moves [01-06-01]: 
+[X] making the 3 input elements [01-06-02]: 
+[X] making the slider move (continuously) when start is pressed [01-06-02]: 
+[X] making the slider stop when the stop button is pressed [01-06-02]: 
+[X] making the slider starting again when the start button is pressed (after being stopped) [01-06-02]: 
+[X] correct use of time delta [01-06-03]: 
+[X] slider goes forward [01-06-03]: 
+[X] slider goes backward [01-06-03]: 
+[X] slider goes back and forth [01-06-03]: 
+[X] correct use of time delta [01-06-04]: 
+[X] fade between colors [01-06-04]: 
+[X] colors transition in both directions (red-&gt;white, white-&gt;red - or others) [01-06-04]: 
+[ ] fade between 3 different colors [01-07-01]: 
+[ ] buttons to cause fade to 3 colors [01-07-02]: 
+[ ] randomly change between colors with timing [01-07-03]: 
+[ ] put selected colors into the sequence [01-07-03]: 
