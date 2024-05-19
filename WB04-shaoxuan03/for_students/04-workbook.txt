@@ -1,0 +1,41 @@
+Wisc ID: slee2268
+GitHub ID: shaoxuan03
+
+[X] correct WB4 Canvas Assignment submission [none]: 
+[X] correct WB4G Canvas Assignment submission on time [none]: 
+[X] filled in correct answer [04-02-01]: 
+[X] filled in correct answer [04-02-02]: 
+[X] filled in correct answer [04-02-03]: 
+[X] filled in correct answer [04-02-04]: 
+[X] filled in correct answer [04-02-05]: 
+[X] filled in correct answer [04-02-06]: 
+[X] filled in correct answer [04-02-07]: 
+[X] filled in correct answer for 3 matrices [04-03-02]: 
+[X] red dot stays in red corner and black dot stays in black corner as dots are dragged; square remains square; done via translate, rotate, and scale [04-04-01]: 
+[X] red dot stays in red corner and black dot stays in black corner as dots are dragged; square remains square; done via transform [04-04-02]: 
+[X] red dot stays in red corner and green dot stays in green corner as dots are dragged; square remains square [04-04-03]: 
+[X] parameters changed so that square 1 matches [04-04-04]: 
+[X] parameters changed so that square 2 matches (freebie!) [04-04-04]: 
+[X] parameters changed so that square 3 matches [04-04-04]: 
+[X] parameters changed so that square 4 matches [04-04-04]: 
+[X] parameters changed so that square 5 matches [04-04-04]: 
+[X] shear-x implemented to draw sheared squares [04-04-05]: 
+[X] boids - add 10 boids when button is clicked, random locations and directions (but all with the correct speed) [04-05-01]: 
+[X] boids - clear when button is clicked [04-05-01]: 
+[X] draw boids so the direction they are facing is clear [04-05-01]: 
+[X] boids bounce, not wrap [04-05-01]: 
+[X] boids change color (briefly) when they hit a wall [04-05-01]: 
+[X] boids bounce off each other [04-05-01]: 
+[X] boids change color (briefly) when they hit another boid (either overlap or come very close) [04-05-01]: 
+[X] boids has at least 4 legs like ants or spiders [04-05-01]: 
+[X] boids has legs that move while they move [04-05-01]: 
+[X] boids has legs that move in a way that resembles walking (not like the propellers of the quadcopters) [04-05-01]: 
+[X] boids randomly make infrequent small changes in direction while walking (and maintain velocity) [04-05-01]: 
+[X] cool or more realistic movements of the legs [04-05-01]: 
+[X] boids bounce off obstacles [04-05-01]: 
+[ ] visually obvious flocking behavior (alignment, separation, cohesion) [04-05-01]: 
+[ ] alignment flocking behavior (adds to `visually obvious') [04-05-01]: 
+[ ] separation flocking behavior (adds to `visually obvious') [04-05-01]: 
+[ ] cohesion flocking behavior (adds to `visually obvious') [04-05-01]: 
+[ ] mouse attraction flocking behavior (adds to `visually obvious') [04-05-01]: 
+[ ] added slider or checkbox that alters steering behavior [04-05-01]: 
