@@ -1,0 +1,2 @@
+Name: Shao Xuan Lee
+Note: for the quadcopter i made 2 of them, one of them rotate in the basic circle which fullfill the basic requirement and the other one rotate in a motion of 8

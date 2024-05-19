@@ -1,0 +1,41 @@
+<!-- here is a big, empty SVG! make it into something interesting! -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="300px" width="500px">
+    <!-- you can delete this big rectangle - it's just a placeholder -->
+
+    <!-- Sun -->
+    <circle cx="100" cy="100" r="50" fill="yellow" />
+
+    <!-- Cloud -->
+    <g transform="translate(200, 50)">
+    <circle cx="0" cy="0" r="30" fill="lightblue" />
+    <circle cx="30" cy="-10" r="30" fill="lightblue" />
+    <circle cx="60" cy="0" r="30" fill="lightblue" />
+    </g>
+
+  <!-- Mountains -->
+  <g transform="translate(50, 200) rotate(-180, 150, 50)">
+    <!-- First mountain -->
+    <polygon points="0,0 100,100 200,0" fill="gray" />
+    <!-- Second mountain -->
+    <polygon points="100,50 200,150 300,50" fill="darkgray" />
+  </g>
+
+  <!-- Trees -->
+  <g>
+    <!-- First tree -->
+    <use xlink:href="#tree" x="150" y="0" />
+    <!-- Second tree -->
+    <use xlink:href="#tree" x="250" y="0" />
+    <!-- Third tree -->
+    <use xlink:href="#tree" x="350" y="0" />
+  </g>
+
+  <!-- Define tree once to be reused -->
+  <g id="tree">
+    <!-- Tree trunk -->
+    <rect x="50" y="250" width="20" height="60" fill="brown" />
+    <!-- Tree crown -->
+    <circle cx="60" cy="230" r="30" fill="green" />
+  </g>
+</svg>
+

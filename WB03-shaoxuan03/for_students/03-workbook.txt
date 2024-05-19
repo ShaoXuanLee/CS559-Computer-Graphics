@@ -1,0 +1,27 @@
+Wisc ID: slee2268
+GitHub ID: shaoxuan03
+Points = 90
+Grade = 5 out of 5
+
+[X] correct WB3 Canvas Assignment submission [none]: 
+[X] correct WB3G Canvas Assignment submission on time [none]: 
+[X] restore the triangle to original position when the “Jump Right” button is released [03-01-06]: 
+[X] change the scales so the two pictures look the same [03-02-06]: 
+[X] add appropriate transformations to make both images look the same [03-03-03]: 
+[X] define the canvas coordinate systems as specified [03-03-05]: 
+[X] quadcopter has a front and 4 arms [03-06-01]: 
+[X] four attached propellers that spin [03-06-01]: 
+[X] propellers spin at different rates [03-06-01]: 
+[X] goes around a circle [03-06-01]: 
+[X] faces points forward while going around circle [03-06-01]: 
+[X] a picture using SVG [03-08-01]: 
+[X] at least one path with an arc [03-08-01]: 
+[X] at least one polygon that is not a rectangle [03-08-01]: 
+[X] a hierarchy using grouping [03-08-01]: 
+[X] repeated instancing via use [03-08-01]: 
+[X] multiple vehicles (must have spinning parts) [03-06-01]: 
+[X] complex paths (at least one 'copter must be a circle) [03-06-01]: 
+[ ] cool looking vehicles [03-06-01]: 
+[ ] interaction (be sure to document) [03-06-01]: 
+[ ] quadcopters do something beyond move in a path [03-06-01]: 
+[ ] other articulated object [03-06-01]: 
