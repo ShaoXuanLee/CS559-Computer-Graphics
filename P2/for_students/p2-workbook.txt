@@ -1,0 +1,44 @@
+Wisc ID: slee2268
+GitHub ID: shaoxuan03
+
+[X] correct P2 Canvas Assignment submission [none]: 
+[X] clear explanations in p2-workbook.txt [none]: 
+[X] correct P2G Canvas Assignment submission on time [none]: 
+[X] program runs (or seems to run correctly - worth looking at error console) [final-grtown]: 
+[X] frame rate seems OK (not too slow) [final-grtown]: 
+[X] UI is there and seems to work (can lookat and ride) [final-grtown]: 
+[X] highlight list looks OK [final-grtown]: 
+[X] visually distinct from example [final-grtown]: 
+[X] theme makes sense (need explanation) [final-grtown]: i hope it make sense
+[X] cool theme bonus (need explanation) [final-grtown]: trying to make a winter theme
+[X] objects created for this assignment 1, not trivial, can be identified in world (need explanation) [final-grtown]: lighthouse
+[X] objects created for this assignment 2, not trivial, can be identified in world (need explanation) [final-grtown]: train system
+[X] 5 more kinds of objects 1, not trivial, can identify (need explanation) [final-grtown]: SimpleHouse1
+[X] 5 more kinds of objects 2, not trivial, can identify (need explanation) [final-grtown]: SimpleHouse2
+[X] 5 more kinds of objects 3, not trivial, can identify (need explanation) [final-grtown]: SimpleHouse3
+[X] 5 more kinds of objects 4, not trivial, can identify (need explanation) [final-grtown]: tree
+[X] 5 more kinds of objects 5, not trivial, can identify (need explanation) [final-grtown]: snow
+[X] has building, natural, vehicle (need explanation) [final-grtown]: houses, lighthouse ; natural: snow ; vehicle: train
+[X] loaded model (need explanation) [final-grtown]: lighthouse
+[X] shader: identifiable and not trivial (need explanation) [final-grtown]: I tried to apply the texture on it but it doesn't work and I am running out of time to debug
+[X] three behaviors you made 1, not trivial, can be identified in scene (need explanation) [final-grtown]: snow
+[X] three behaviors you made 2, not trivial, can be identified in scene (need explanation) [final-grtown]: the train move
+[X] three behaviors you made 3, not trivial, can be identified in scene (need explanation) [final-grtown]: does the carousel count
+[ ] at least one object is rideable / followable [final-grtown]: 
+[X] behavior that is not simple (need explanation) [final-grtown]: the train ride on the catmull rom curve
+[ ] articulated figure (need explanation) [final-grtown]: 
+[X] advanced thing 1: has a challenge type (need the name and number from the list) [final-grtown]: Number 4: particle
+[X] advanced thing 1: works properly, can be identified in the town (need explanation) [final-grtown]: snow with textures, ; fall down from sky and move left and right
+[ ] advanced thing 1: points above and beyond (need explanation) [final-grtown]: 
+[ ] advanced thing 2: has a challenge type (need the name and number from the list) [final-grtown]: 
+[ ] advanced thing 2: works properly, can be identified in the town (need explanation) [final-grtown]: 
+[ ] advanced thing 2: points above and beyond (need explanation) [final-grtown]: 
+[ ] advanced thing 3: has a challenge type (need the name and number from the list) [final-grtown]: 
+[ ] advanced thing 3: works properly, can be identified in the town (need explanation) [final-grtown]: 
+[ ] advanced thing 3: points above and beyond (need explanation) [final-grtown]: 
+[ ] advanced thing 4: has a challenge type (need the name and number from the list) [final-grtown]: 
+[ ] advanced thing 4: works properly, can be identified in the town (need explanation) [final-grtown]: 
+[ ] advanced thing 4: points above and beyond (need explanation) [final-grtown]: 
+[ ] advanced thing 5: has a challenge type (need the name and number from the list) [final-grtown]: 
+[ ] advanced thing 5: works properly, can be identified in the town (need explanation) [final-grtown]: 
+[ ] advanced thing 5: points above and beyond (need explanation) [final-grtown]: 
